@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
+import { theme } from "@/app/theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,10 +10,6 @@ export const metadata: Metadata = {
   title: "hannah blogs",
   description: "I've got a blog too!!",
 };
-
-const theme = createTheme({
-  /** Put your mantine theme override here */
-});
 
 export default function RootLayout({
   children,
