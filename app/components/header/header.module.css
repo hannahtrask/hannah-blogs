@@ -1,0 +1,55 @@
+.header {
+  padding-top: var(--mantine-spacing-sm);
+  background-color: light-dark(
+    var(--mantine-color-brand-3),
+    var(--mantine-color-brand-6)
+  );
+  border-bottom: rem(1px) solid
+    light-dark(var(--mantine-color-brand-7), transparent);
+  margin-bottom: rem(120px);
+}
+
+.mainSection {
+  padding-bottom: var(--mantine-spacing-sm);
+}
+
+.tabsList {
+  &::before {
+    display: none;
+  }
+}
+
+.tab {
+  font-weight: 500;
+  height: rem(38);
+  background-color: transparent;
+  position: relative;
+  bottom: -1px;
+
+  &::before,
+  &::after {
+    background-color: light-dark(
+      var(--mantine-color-brand-3),
+      var(--mantine-color-brand-7)
+    ) !important;
+  }
+
+  &:hover {
+    background-color: light-dark(
+      var(--mantine-color-brand-1),
+      var(--mantine-color-brand-5)
+    );
+  }
+
+  &[data-active] {
+    background-color: light-dark(
+      var(--mantine-color-brand-0),
+      var(--mantine-color-brand-9)
+    );
+    border-color: light-dark(
+      var(--mantine-color-brand-9),
+      var(--mantine-color-brand-9)
+    );
+    border-bottom-color: transparent;
+  }
+}
