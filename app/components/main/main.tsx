@@ -1,9 +1,8 @@
-"use client";
 import { Container, Grid, SimpleGrid, Skeleton, rem } from "@mantine/core";
 
 const PRIMARY_COL_HEIGHT = rem(300);
 
-export function Main() {
+export async function Main() {
   const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
 
   return (
