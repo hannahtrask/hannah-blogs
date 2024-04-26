@@ -1,6 +1,9 @@
 import { createClient, Entry } from "contentful";
 import { TypePostSkeleton } from "@/contentful/types";
-import {ContentImage, parseContentfulContentImage} from "@/contentful/contentful-image";
+import {
+  ContentImage,
+  parseContentfulContentImage,
+} from "@/contentful/contentful-image";
 
 const { NEXT_PUBLIC_CONTENTFUL_SPACE_ID, NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN } =
   process.env;
@@ -16,7 +19,7 @@ export interface BlogPost {
   title: string;
   author: string;
   summary?: string;
-  image?: ContentImage | null
+  image?: ContentImage | null;
 }
 
 export function parseContentfulBlogPost(
