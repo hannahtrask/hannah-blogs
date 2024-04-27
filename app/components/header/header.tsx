@@ -2,7 +2,7 @@
 import { Container, Tabs } from "@mantine/core";
 import classes from "./header.module.css";
 
-const tabs = ["Home", "Blog"];
+const tabs = ["Home"];
 
 export function Header() {
   const items = tabs.map((tab) => (

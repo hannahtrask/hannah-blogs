@@ -1,11 +1,11 @@
 .header {
   padding-top: var(--mantine-spacing-sm);
   background-color: light-dark(
-    var(--mantine-color-brand-3),
-    var(--mantine-color-brand-6)
+    var(--mantine-color-black),
+    var(--mantine-color-white)
   );
   border-bottom: rem(1px) solid
-    light-dark(var(--mantine-color-brand-7), transparent);
+    light-dark(var(--mantine-color-brand-5), transparent);
   margin-bottom: rem(120px);
 }
 
@@ -29,21 +29,21 @@
   &::before,
   &::after {
     background-color: light-dark(
-      var(--mantine-color-brand-3),
-      var(--mantine-color-brand-7)
+      var(--mantine-color-white),
+      var(--mantine-color-brand-5)
     ) !important;
   }
 
   &:hover {
     background-color: light-dark(
-      var(--mantine-color-brand-1),
-      var(--mantine-color-brand-5)
+      var(--mantine-color-white),
+      var(--mantine-color-brand-4)
     );
   }
 
   &[data-active] {
     background-color: light-dark(
-      var(--mantine-color-brand-0),
+      var(--mantine-color-white),
       var(--mantine-color-brand-9)
     );
     border-color: light-dark(

@@ -25,19 +25,19 @@ export function Footer() {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color={theme.colors.accent[6]} variant="subtle">
+          <ActionIcon size="lg" color={theme.colors.brand[8]} variant="subtle">
             <IconBrandTwitter
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon size="lg" color={theme.colors.accent[6]} variant="subtle">
+          <ActionIcon size="lg" color={theme.colors.brand[8]} variant="subtle">
             <IconBrandYoutube
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon size="lg" color={theme.colors.accent[6]} variant="subtle">
+          <ActionIcon size="lg" color={theme.colors.brand[8]} variant="subtle">
             <IconBrandInstagram
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}

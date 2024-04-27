@@ -1,14 +1,11 @@
 .footer {
   background-color: light-dark(
-    var(--mantine-color-secondary-1),
-    var(--mantine-color-secondary-5)
+    var(--mantine-color-white),
+    var(--mantine-color-brand-6)
   );
   margin-top: rem(120px);
   border-top: rem(1px) solid
-    light-dark(
-      var(--mantine-color-secondary-4),
-      var(--mantine-color-secondary-8)
-    );
+    light-dark(var(--mantine-color-brand-8), var(--mantine-color-brand-8));
 }
 
 .inner {

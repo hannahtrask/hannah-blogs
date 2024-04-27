@@ -13,16 +13,52 @@
 }
 
 body {
-  color: light-dark(var(--mantine-color-brand-9));
+  color: light-dark(var(--mantine-color-black));
   background: linear-gradient(
       to bottom,
       transparent,
-      light-dark(var(--mantine-color-brand-0))
+      light-dark(var(--mantine-color-white))
     )
-    light-dark(var(--mantine-color-brand-0));
+    light-dark(var(--mantine-color-white));
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.blog {
+  display: flex;
+  gap: 1rem;
+  margin: 0 1rem;
+  justify-content: space-around;
+}
+
+.card {
+  height: rem(440px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-weight: 900;
+  color: var(--mantine-color-white);
+  line-height: 1.2;
+  font-size: rem(32px);
+  margin-top: var(--mantine-spacing-xs);
+}
+
+.category {
+  color: var(--mantine-color-white);
+  opacity: 0.7;
+  font-weight: 700;
+  text-transform: uppercase;
 }

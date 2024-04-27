@@ -1,23 +1,41 @@
 import { Header } from "@/app/components/header/header";
 import { Footer } from "@/app/components/footer/footer";
 import { getPosts } from "@/contentful/contentful";
+import { Button, Paper, Title, Text } from "@mantine/core";
 
 export default async function Home() {
-  console.log("hey");
   const posts = await getPosts();
-  console.log(posts);
-  posts.map((hey) => console.log(hey));
 
   return (
     <>
       <Header />
-      <div>
-        <h1>My Contentful Blog</h1>
-        <ul>
-          {posts.map((post) => {
-            return <li>{post.author}</li>;
-          })}
-        </ul>
+      <div className="blog">
+        {posts && posts.map((post, index) => {
+          return (
+            <Paper
+              shadow="md"
+              p="xl"
+              radius="md"
+              className="card"
+              key={index}
+              style={{
+                backgroundImage: `url(${post?.image?.src})`,
+              }}
+            >
+              <div>
+                <Text className="category" size="xs">
+                  {post.title}
+                </Text>
+                <Title order={3} className="title">
+                  {post.summary}
+                </Title>
+              </div>
+              <Button variant="white" color="dark">
+                read more ...
+              </Button>
+            </Paper>
+          );
+        })}
       </div>
       <Footer />
     </>
